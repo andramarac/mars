@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <title>Mars Weather</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="/styles/main.css" rel="stylesheet">
+
+    <!-- Scripts-->
+   <script src="scripts/index.js" defer></script>
+
+</head>
+
+<body>
+
+    <main class="mars-current-weather">
+        <h1 class="main-title">Latest Weather at Elysium Plantitia</h1>
+        
+        <div class="date">
+            <h2 class="section-title 
+            section-title--date">Sol 377</h2>
+            <p class="date__day">December 18</p>
+        </div>
+
+        <div class="temp">
+            <h2 class="section-title">Temperature</h2>
+            <p class="reading">High: -20</p>
+            <p class="reading">Low: -250</p>
+        </div>    
+        
+        <div class="wind">
+            <h2 class="section-title">Wind</h2>
+            <p class="reading">75kph</p>
+
+            <div class="wind__direction">
+                <p class="sr-only">45degrees</p>
+                <div class="wind__arrow"></div>
+            </div>
+
+        </div>
+
+        <div class="info">
+            <div class="p">InSight is taking daily weather measurements (temperature, wind, pressure) on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator.</div>
+            <div class="p">As more data from a particular sol is downlinked from the spacecraft (sometimes several days later), these values are recalculated, and consequently may change as more data is received on Earth. <a href="https://mars.nasa.gov/insight/weather/">Click here</a> to learn more.</div>
+        </div>
+
+        <div class="unit">
+            <label for="cel">°C</label>
+            <input type="radio" id="cel" name="unit" checked>
+            <!--when unit is clicked, checkbox needs to change-->
+            <button class="unit__toggle"></button>
+
+            <label for="fah">°F</label>
+            <input type="radio" id="fah" name="unit">
+        </div>
+
+    </main>
+
+    <div class="previous-weather">
+        <!--when clicked, toggle ".show-weather" to ".previous-weather" div-->
+        <button for="weather-toggle" class="show-previous-weather">
+            <span>&#8593;</span>
+            <span class="sr-only">
+                Show previous weather
+            </span>
+        </button>
+
+        <h2 class="main-title previous-weather__title">Previous 7 days</h2>
+
+        <div class="previous-days">
+            <div class="previous-day">
+                <h3 class="previous-day__sol">Sol 371</h3>
+                <p class="previous-day__date">September 31</p>
+                <p class="previous-day__temp">High: -20</p>
+                <p class="previous-day__temp">Low: -250</p>
+                <button class="previous-day__more-info">More Info</button>
+            </div>
+
+            <div class="previous-day">
+                <h3 class="previous-day__sol">Sol 371</h3>
+                <p class="previous-day__date">September 31</p>
+                <p class="previous-day__temp">High: -20</p>
+                <p class="previous-day__temp">Low: -250</p>
+                <button class="previous-day__more-info">More Info</button>
+            </div>
+
+            <div class="previous-day">
+                <h3 class="previous-day__sol">Sol 371</h3>
+                <p class="previous-day__date">September 31</p>
+                <p class="previous-day__temp">High: -20</p>
+                <p class="previous-day__temp">Low: -250</p>
+                <button class="previous-day__more-info">More Info</button>
+            </div>
+
+            <div class="previous-day">
+                <h3 class="previous-day__sol">Sol 371</h3>
+                <p class="previous-day__date">September 31</p>
+                <p class="previous-day__temp">High: -20</p>
+                <p class="previous-day__temp">Low: -250</p>
+                <button class="previous-day__more-info">More Info</button>
+            </div>
+            <div class="previous-day">
+                <h3 class="previous-day__sol">Sol 371</h3>
+                <p class="previous-day__date">September 31</p>
+                <p class="previous-day__temp">High: -20</p>
+                <p class="previous-day__temp">Low: -250</p>
+                <button class="previous-day__more-info">More Info</button>
+            </div>
+            <div class="previous-day">
+                <h3 class="previous-day__sol">Sol 371</h3>
+                <p class="previous-day__date">September 31</p>
+                <p class="previous-day__temp">High: -20</p>
+                <p class="previous-day__temp">Low: -250</p>
+                <button class="previous-day__more-info">More Info</button>
+            </div>
+            <div class="previous-day">
+                <h3 class="previous-day__sol">Sol 371</h3>
+                <p class="previous-day__date">September 31</p>
+                <p class="previous-day__temp">High: -20</p>
+                <p class="previous-day__temp">Low: -250</p>
+                <button class="previous-day__more-info">More Info</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+
+</html>
