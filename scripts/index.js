@@ -12,8 +12,10 @@ const API_KEY = 'hIgxMtSwDRmYc1LdRaiF7SghuGWUzAuSHLtGeeUA'
 const API_URL = `https://api.nasa.gov/insight_weather/?api_key=${API_KEY}&feedtype=json&ver=1.0`
 
 // Grab SOL Day
-const currentSolElement = document.querySelector('[data-current-sol')
-const currentSolElement = document.querySelector('[data-current-sol')
+const currentSolElement = document.querySelector('[data-current-sol]')
+const currentDateElement = document.querySelector('[data-current-data]')
+const currentTempHighElement = document.querySelector('[data-current-temp-high]')
+const currentTempLowElement = document.querySelector('[data-current-temp-low]')
 
 let selectedSolIndex
 
