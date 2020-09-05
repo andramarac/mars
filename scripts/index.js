@@ -69,8 +69,10 @@ function displaySelectedSol(sols) {
     currentTempHighElement.innerHTML = displayTemp(selectedSol.maxTemp)
     currentTempLowElement.innerHTML = displayTemp(selectedSol.minTemp)
     windSpeedElement.innerHTML = displaySpeed(selectedSol.windSpeed)
-    windDirectionText.innerHTML = selectedSol.windDirectionCardinal
     windDirectionArrow.style.setProperty('--direction', `${selectedSol.windDirectionDegrees}deg`)
+    windDirectionText.innerHTML = selectedSol.windDirectionCardinal
+    console.log(windDirectionArrow)
+    console.log(windDirectionText)
 }
 
 // Previous weather: add live data into HTML
@@ -111,11 +113,12 @@ function displayTemp(temp) {
 
 // Format wind speed
 function displaySpeed(speed) {
+    speed = speed / 0.44704;
     let returnSpeed = speed
-    if(!isMetric()) {
-        returnSpeed  = speed / 1.609
+    if(isMetric()) {
+        returnSpeed  = speed * 1.609
     }
-    return Math.round(speed)
+    return Math.round(returnSpeed)
 }
 
 // Get data from api

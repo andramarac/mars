@@ -22,6 +22,10 @@
     --clr-accent-dark: #613131;
   }
 
+  .data-previous-sol-template {
+      display:none;
+  }
+
   .sr-only:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -132,7 +136,7 @@
      &__arrow {
          // Update Custom Props in JS
          // to see the directions
-         --direction: 180deg;
+         --direction:180deg;
          --size: .7rem;
          height: calc(var(--size) * 3);
          width: var(--size);
@@ -140,7 +144,6 @@
          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
          transform: translateY(-50%) rotate(var(--direction));
          transform-origin: bottom center;
-
          transition: transform 500ms ease;
 
      }
@@ -191,6 +194,7 @@
          padding: 0;
          border-radius: 100vmax;
          margin: 0 1em;
+         outline: none;
 
          &::after {
              content: '';
@@ -201,11 +205,13 @@
              margin: 3px;
              margin-left: auto;
              width: 35%;
+             outline: none;
              }
         }
     }
      :checked ~ .unit__toggle::after {
-        margin-left:3px; 
+        margin-left:3px;
+        outline: none;
     
  }
 
@@ -216,6 +222,7 @@
      bottom: 0;
      width: 100%;
      transform: translateY(70%);
+     outline: none;
      transition: transform 350ms ease-in;
      padding: 2em;
      border: 0;
@@ -227,6 +234,7 @@
      left: 50%;
      top: 22%;
      width:20rem;
+     outline: none;
      transform: translate(-50%, calc(-100% - 3rem));
      text-align: center;
      font-size: var(--fs-h2);
@@ -240,6 +248,7 @@
      &:hover,
      &:focus {
          color: var(--clr-accent);
+         outline: none;
      }
 
      span {
@@ -249,6 +258,7 @@
          transition: transform 300ms ease;
          transform: translateY(-5px);
          border: 0;
+         outline: none;
      }
  }
 
@@ -256,6 +266,7 @@
      display:flex;
      justify-content: space-between;
      padding: 2em;
+     outline: none;
      
  }
 
@@ -305,6 +316,7 @@
             text-transform: uppercase;
             padding: .3em 1em;
             margin-top: 1em;
+            outline: none;
 
             &:hover {
                 background: var(--clr-gray);

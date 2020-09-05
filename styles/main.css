@@ -21,6 +21,10 @@
   --clr-accent-dark: #613131;
 }
 
+.data-previous-sol-template {
+  display: none;
+}
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -145,7 +149,7 @@ a:hover {
 }
 
 .wind__arrow {
-  --direction: 180deg;
+  --direction:180deg;
   --size: .7rem;
   height: calc(var(--size) * 3);
   width: var(--size);
@@ -218,6 +222,7 @@ a:hover {
   padding: 0;
   border-radius: 100vmax;
   margin: 0 1em;
+  outline: none;
 }
 
 .unit__toggle::after {
@@ -229,10 +234,12 @@ a:hover {
   margin: 3px;
   margin-left: auto;
   width: 35%;
+  outline: none;
 }
 
 :checked ~ .unit__toggle::after {
   margin-left: 3px;
+  outline: none;
 }
 
 .previous-weather {
@@ -243,6 +250,7 @@ a:hover {
   width: 100%;
   -webkit-transform: translateY(70%);
           transform: translateY(70%);
+  outline: none;
   -webkit-transition: -webkit-transform 350ms ease-in;
   transition: -webkit-transform 350ms ease-in;
   transition: transform 350ms ease-in;
@@ -257,6 +265,7 @@ a:hover {
   left: 50%;
   top: 22%;
   width: 20rem;
+  outline: none;
   -webkit-transform: translate(-50%, calc(-100% - 3rem));
           transform: translate(-50%, calc(-100% - 3rem));
   text-align: center;
@@ -272,6 +281,7 @@ a:hover {
 
 .show-previous-weather:hover, .show-previous-weather:focus {
   color: var(--clr-accent);
+  outline: none;
 }
 
 .show-previous-weather span {
@@ -286,6 +296,7 @@ a:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   border: 0;
+  outline: none;
 }
 
 .previous-days {
@@ -296,6 +307,7 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2em;
+  outline: none;
 }
 
 .previous-weather__title {
@@ -345,6 +357,7 @@ a:hover {
   text-transform: uppercase;
   padding: .3em 1em;
   margin-top: 1em;
+  outline: none;
 }
 
 .show-weather.previous-weather .previous-day__more-info:hover {
